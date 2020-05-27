@@ -18,7 +18,7 @@ void Ping()
 	    i = 0;
 	    break;
 	case PLow:
-	    ping_state = (i <= 9) ? PLow : PHigh;
+	    ping_state = (i < 9) ? PLow : PHigh;
 	    i++;
 	    break;
         default:
